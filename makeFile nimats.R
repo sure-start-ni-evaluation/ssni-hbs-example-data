@@ -25,8 +25,9 @@ take_area <-
 master_id_df <-
   data.frame(
     id_hcn_m = sample(1:10e3, size = 15e3, replace = T), #HCN (M),
-    id_hcn_i = 1:15e3 #HCN (I),
+    id_hcn_i = 1:15e3 %>% paste0('c')
   )
+
 
 ## create a small function to sample 
 take_sample <- 
