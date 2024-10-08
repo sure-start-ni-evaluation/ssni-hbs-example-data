@@ -3,10 +3,11 @@
 An example dataset based on the linked NI administrative data used for the Sure Start project. Used for testing code outside a safe setting/ prior to data access.
 
 Consists of:
-- R scripts to make the example data 
+- R scripts to make the example data
 - pre-made data examples
 - documentation for the data 
 
+**This repo does not contain any real data on individuals.**
 
 ## Table of Contents
 
@@ -18,6 +19,9 @@ Consists of:
 
 Just grab the example data from the folder. If you want to remake the data, run the R scripts. 
 
+R scripts starting with `makeFile` shows the underlying code used to make the example data. 
+
+Documentation on what the variable are supposed to be are in the `docs` folder. 
 
 ## Contact
 

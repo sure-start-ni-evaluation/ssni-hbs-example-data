@@ -58,7 +58,7 @@ pas_df <-
     `22AGE` = 19:45 %>% take_sample_pas(),# 22AGE
     `23AGEOFINFANT` = 0:5 %>% take_sample_pas(),# 23AGEOFINFANT 
     `25PRIME_DIAG` = letters %>% take_sample_pas(),# 25PRIME_DIAG (primary diagnosis)
-    stay_dur_pas = 1:30 %>% take_sample_pas(),# STAY_DUR
+    STAY_DUR = 1:30 %>% take_sample_pas(),# stay duration
     SEC_DIAGNOSIS1 = letters %>% take_sample_pas(),# SEC_DIAGNOSIS1-15
     SEC_DIAGNOSIS2 = letters %>% take_sample_pas(),# SEC_DIAGNOSIS1-15
     SEC_DIAGNOSIS3 = letters %>% take_sample_pas(),# SEC_DIAGNOSIS1-15

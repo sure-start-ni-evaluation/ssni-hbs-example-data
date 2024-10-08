@@ -43,7 +43,8 @@ nimats_main_df <-
   mutate(
     birth_ward = take_area(wards = T),# Birth ward code 1992 (M)
     birth_soa =  take_area(),# Birth SOA (2001 code)
-    current_soa_2024 = take_area(seed = 12),# Current SOA (2001 code, mother) -- OR SOA every January (as suggested by HBS) 
+    current_soa_2023 = take_area(seed = 12),# 2023 SOA (2001 code, mother) measured on Jan 2023
+    current_soa_2024 = take_area(seed = 12),# residence of mother recorded Jan 2024 
     dob_mon_i = 1:12 %>% take_sample(), # DOB Month (Infant)
     dob_year_i = 2006:2022 %>% take_sample(), # DOB Year (Infant)
     age_m = 17:40 %>% take_sample(), # Age at birth (Mother)
