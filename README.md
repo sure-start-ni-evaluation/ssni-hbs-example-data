@@ -17,11 +17,11 @@ Consists of:
 
 ## Usage
 
-Just grab the example data from the folder. If you want to remake the data, run the R scripts. 
+Just grab data from the `outputs` folder.  
 
-R scripts starting with `makeFile` shows the underlying code used to make the example data. 
+R scripts starting with `makeFile` were used to make the example data. 
 
-Documentation on what the variable are supposed to be are in the `docs` folder. 
+Documentation on variables and data sources are in the `docs` folder. 
 
 ## Contact
 
