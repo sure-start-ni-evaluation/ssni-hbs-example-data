@@ -10,8 +10,13 @@ soa_ward_list <-
 
 ## create a function for consistent SOA/ WARD
 take_area <-
-  function(seed = 1234, wards = F, size = 15e3){
-    set.seed(seed)
+  function(
+    seed = NULL, 
+    wards = F, 
+    size = 15e3){
+    
+    if(!is.null(seed)){set.seed(seed)}
+      
     take_rows = sample(1:length(soa_ward_list), size = 15e3, replace = T)
     
     if (wards){
