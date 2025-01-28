@@ -10,7 +10,7 @@ soa_ward_list <-
 take_area <-
   function(seed = 1234, wards = F, size = 15e3){
     set.seed(seed)
-    take_rows = sample(1:length(soa_ward_list), size = 15e3, replace = T)
+    take_rows = sample(1:nrow(soa_ward_list), size = 15e3, replace = T)
     
     if (wards){
       return(soa_ward_list$`Ward Code`[take_rows])

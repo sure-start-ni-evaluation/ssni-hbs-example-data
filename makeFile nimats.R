@@ -17,13 +17,15 @@ take_area <-
     
     if(!is.null(seed)){set.seed(seed)}
       
-    take_rows = sample(1:length(soa_ward_list), size = 15e3, replace = T)
+    take_rows = sample(1:nrow(soa_ward_list), size = 15e3, replace = T)
     
     if (wards){
       return(soa_ward_list$`Ward Code`[take_rows])
     }
     return(soa_ward_list$`SOA Code`[take_rows])
   }
+
+
 # create master id files of mothers and infants ---------------------------
 ## 10,000 unique mothers with 15,000 infants
 
